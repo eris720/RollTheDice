@@ -1,0 +1,78 @@
+.dices {
+  display: flex;
+  place-content: center;
+  gap: 10vw;
+  margin-top: 7rem;
+}
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 6rem;
+  text-align: center;
+}
+.cube-design {
+  display: grid;
+  background-color: rgba(249, 247, 247, 0.86);
+  box-shadow: inset 2px 1px 35px 5px rgba(66, 68, 90, 1);
+  border-radius: 10%;
+  width: 16vw;
+  height: 16vw;
+  padding: 1.5rem;
+}
+.cube1 {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  place-items: center;
+}
+.cube2 {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  place-items: center;
+}
+.dot {
+  width: 2.5vw;
+  height: 2.5vw;
+  background-color: rgb(25, 25, 25);
+  border-radius: 50%;
+}
+.invisible {
+  display: none;
+}
+.one {
+  grid-area: a;
+}
+.two {
+  grid-area: b;
+}
+.three {
+  grid-area: c;
+}
+.four {
+  grid-area: d;
+}
+.five {
+  grid-area: e;
+}
+.six {
+  grid-area: f;
+}
+@media screen and (max-width: 470px) {
+  .dices {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  .cube-design {
+    width: 28vw;
+    height: 28vw;
+    padding: 3rem;
+  }
+  .dot {
+    width: 5vw;
+    height: 5vw;
+  }
+}
